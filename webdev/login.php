@@ -7,7 +7,7 @@ $error = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['login'])) {
         // Debugging statement to check if this block is executed
-        echo "Form submitted. Processing login...";
+        
 
         // Login form submitted
         $email = $_POST['email'];
@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         
 
                         // Debugging statement to check if redirection block is reached
-                        echo "Redirecting...";
+                      
                         header('Location: homepage.php');
                         exit(); // Ensure script stops execution after redirection
                     } else {
